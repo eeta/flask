@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')    # 접속하는 url
 def index():
-  return render_template('index.html')
+  return render_template('index.html',user="eeta",data={'level':30,'point':400,'exp':50000})
 
 if __name__=="__main__":
   app.run(debug=True)

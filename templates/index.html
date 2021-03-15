@@ -7,6 +7,15 @@
     <!-- 정적파일 참조: {{ url_for('static', filename='정적파일') }} -->
 </head>
 <body>
-    <h1>이것은 index.html</h1>
+    <h1>대문 페이지</h1>
+    {#
+    flask는 jinja2 템플릿 엔진을 사용한다.
+    변수를 가져오는 템플릿은 {{변수명}}
+    key로 value를 가져올 땐 {{변수명.key}}
+    #}
+    이름: {{user}}<br>
+    레벨: {{data.level}}<br>
+    포인트: {{data.point}}<br>
+    경험치: {{data.exp}}<br>
 </body>
 </html>
